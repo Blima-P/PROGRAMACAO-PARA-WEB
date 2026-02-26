@@ -9,13 +9,23 @@
 </head>
 
 <body>
-    <h1>Calculadora de Quadrado</h1>
+    <h1>Calculadora</h1>
+
     <form id="numeroForm">
         <label for="numero">Digite um número:</label>
         <input type="number" id="numero" name="numero" required>
-        <button type="submit">Calcular Quadrado</button>
-    </form>
-    <p>O resultado é: <span id="resultado"></span></p>
+
+        <form id="numeroForm">
+            <label for="numero">Escolha a operação</label>
+            <select id="operacao">
+                  <option value="quadrado"> Quadrado </option>
+                <option value="cubo"> Cubo </option>
+           </select>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <p>O resultado é: <strong id="resultado"></strong></p>
 </body>
 
 </html>
