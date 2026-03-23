@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ============================================
+         METATAGS - IMPORTANTE PARA A PROVA!
+         ============================================ -->
+    
+    <!-- charset: Define a codificação de caracteres (UTF-8 suporta acentos) -->
+    <meta charset="UTF-8">
+    
+    <!-- viewport: Torna a página responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculadora - Exercício 1</title>
+    
+    <!-- Vinculando CSS externo - usa o atributo href -->
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <h1>🧮 Calculadora de Quadrado e Cubo</h1>
+    
+    <!-- ============================================
+         FORMULÁRIO - ELEMENTOS IMPORTANTES
+         ============================================ -->
+    
+    <!-- 
+        IMPORTANTE: O formulário tem um ID para podermos selecioná-lo no JS
+        O evento 'submit' será capturado no JavaScript
+    -->
+    <form id="formularioCalculo">
+        
+        <!-- 
+            LABEL: Associa um texto ao input usando o atributo 'for'
+            O valor de 'for' deve ser igual ao 'id' do input
+        -->
+        <label for="numero">Digite um número:</label>
+        
+        <!-- 
+            INPUT: Campo de entrada
+            - type="number": Aceita apenas números
+            - id="numero": Para selecionar com getElementById
+            - placeholder: Texto que aparece quando vazio
+            - required: Campo obrigatório
+        -->
+        <input 
+            type="number" 
+            id="numero" 
+            placeholder="Ex: 5"
+            required
+        >
+        
+        <br><br>
+        
+        <!-- 
+            BUTTON: Botão de envio
+            - type="submit": Envia o formulário (dispara evento submit)
+        -->
+        <button type="submit">Calcular</button>
+    </form>
+    
+    <!-- ============================================
+         ÁREA DE RESULTADOS
+         ============================================ -->
+    
+    <!-- 
+        DIV para mostrar resultados
+        Usaremos innerHTML para inserir o resultado aqui
+    -->
+    <div id="resultado"></div>
+    
+    <!-- 
+        ============================================
+        SCRIPT NO FINAL DO BODY - IMPORTANTE!
+        ============================================
+        
+        O JavaScript deve ser incluído no FINAL do body porque:
+        1. Garante que todo o HTML já foi carregado
+        2. Os elementos já existem quando o JS tenta selecioná-los
+        
+        ALTERNATIVA: Usar defer no head
+        <script src="calculadora.js" defer></script>
+    -->
+    <script src="calculadora.js"></script>
+</body>
+</html>
