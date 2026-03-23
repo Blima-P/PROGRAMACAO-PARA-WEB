@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Parcelas</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .campo { margin-bottom: 10px; }
+        #resultado { margin-top: 20px; font-weight: bold; color: blue; }
+    </style>
+</head>
+<body>
+
+    <h2>Calculadora de Juros</h2>
+    
+    <div class="campo">
+        <label>Valor Total (R$):</label><br>
+        <input type="number" id="valorTotal" step="0.01">
+    </div>
+
+    <div class="campo">
+        <label>Número de Parcelas:</label><br>
+        <input type="number" id="parcelas">
+    </div>
+
+    <div class="campo">
+        <label>Taxa de Juros Mensal (%):</label><br>
+        <input type="number" id="taxaJuros" step="0.1">
+    </div>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+
+    <script src="Questão03.js"></script>
+</body>
+</html>
