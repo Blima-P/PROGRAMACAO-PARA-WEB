@@ -1,0 +1,46 @@
+/* ============================================
+   BOAS-VINDAS - CSS EXTERNO
+   ============================================ */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+#container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+button {
+    font-size: 16px;
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-entrar {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-sair {
+    background-color: #f44336;
+    color: white;
+}
+
+#mensagem {
+    font-size: 24px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+}

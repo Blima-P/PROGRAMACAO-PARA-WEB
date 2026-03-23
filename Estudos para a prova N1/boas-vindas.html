@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Boas-Vindas - Exercício 2</title>
+    <!-- Vinculando CSS externo -->
+    <link rel="stylesheet" href="boas-vindas.css">
+</head>
+<body>
+    <div id="container">
+        <h1>👋 Sistema de Boas-Vindas</h1>
+        
+        <!-- 
+            BOTÃO COM ONCLICK
+            onclick="nomeDaFuncao()" - Executa a função quando clicado
+        -->
+        <button class="btn-entrar" onclick="pedirNome()">Entrar</button>
+        
+        <!-- Área onde a mensagem será exibida -->
+        <div id="mensagem"></div>
+        
+        <!-- Área onde o botão de sair será criado dinamicamente -->
+        <div id="areaBotoes"></div>
+    </div>
+    
+    <script src="boas-vindas.js"></script>
+</body>
+</html>
